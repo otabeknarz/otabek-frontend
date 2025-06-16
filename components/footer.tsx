@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import Link from "next/link"
-import { Github, Linkedin, MessageSquare } from "lucide-react"
+import { Linkedin, MessageSquare } from "lucide-react"
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -21,16 +21,7 @@ export function Footer() {
         
         <div className="flex items-center gap-4">
           <Link 
-            href="https://github.com" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="p-2 rounded-full hover:bg-muted transition-colors"
-          >
-            <Github className="h-5 w-5" />
-            <span className="sr-only">GitHub</span>
-          </Link>
-          <Link 
-            href="https://linkedin.com" 
+            href="https://linkedin.com/in/otabek-narz-12197631a/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="p-2 rounded-full hover:bg-muted transition-colors"
@@ -39,7 +30,7 @@ export function Footer() {
             <span className="sr-only">LinkedIn</span>
           </Link>
           <Link 
-            href="https://t.me" 
+            href="https://t.me/otabek_narz" 
             target="_blank" 
             rel="noopener noreferrer"
             className="p-2 rounded-full hover:bg-muted transition-colors"

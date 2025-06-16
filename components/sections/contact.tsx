@@ -3,7 +3,7 @@
 import React from "react"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
-import { Github, Linkedin, Mail, Phone } from "lucide-react"
+import { Linkedin, Mail, Phone } from "lucide-react"
 
 export function ContactSection() {
   return (
@@ -62,24 +62,6 @@ export function ContactSection() {
                     </div>
                   </div>
                   
-                  {/* GitHub */}
-                  <div className="flex items-center gap-3">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
-                      <Github className="h-5 w-5 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-semibold">GitHub</h3>
-                      <a
-                        href="https://github.com/otabeknarz"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-sm text-primary hover:underline"
-                      >
-                        github.com/otabeknarz
-                      </a>
-                    </div>
-                  </div>
-                  
                   {/* LinkedIn */}
                   <div className="flex items-center gap-3">
                     <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
@@ -88,12 +70,12 @@ export function ContactSection() {
                     <div>
                       <h3 className="text-xl font-semibold">LinkedIn</h3>
                       <a
-                        href="https://linkedin.com/in/otabeknarz"
+                        href="https://www.linkedin.com/in/otabek-narz-12197631a/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-sm text-primary hover:underline"
                       >
-                        linkedin.com/in/otabeknarz
+                        Otabek Narz
                       </a>
                     </div>
                   </div>
@@ -113,21 +95,6 @@ export function ContactSection() {
                     I'm always open to new opportunities and collaborations. Feel free to reach out through any of the contact methods listed.
                   </p>
                   <div className="flex gap-4">
-                    <Button
-                      asChild
-                      variant="outline"
-                      size="icon"
-                      className="rounded-full"
-                    >
-                      <a
-                        href="https://github.com/otabeknarz"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="GitHub"
-                      >
-                        <Github className="h-5 w-5" />
-                      </a>
-                    </Button>
                     <Button
                       asChild
                       variant="outline"
