@@ -4,8 +4,10 @@ import React from "react"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Linkedin, Mail, Phone } from "lucide-react"
+import { useAnalytics } from "@/lib/posthog"
 
 export function ContactSection() {
+  const { trackEvent } = useAnalytics()
   return (
     <section id="contact" className="py-20 md:py-28">
       <div className="container px-4 md:px-6">
@@ -106,6 +108,7 @@ export function ContactSection() {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="LinkedIn"
+                        onClick={() => trackEvent('contact_linkedin_clicked', { location: 'contact_section' })}
                       >
                         <Linkedin className="h-5 w-5" />
                       </a>
@@ -119,6 +122,7 @@ export function ContactSection() {
                       <a
                         href="mailto:otabeknarz@gmail.com"
                         aria-label="Email"
+                        onClick={() => trackEvent('contact_email_clicked', { location: 'contact_section' })}
                       >
                         <Mail className="h-5 w-5" />
                       </a>
