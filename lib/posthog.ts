@@ -6,23 +6,23 @@ import { usePostHog } from "posthog-js/react";
  * trackEvent('button_clicked', { button_name: 'contact' });
  */
 export function useAnalytics() {
-  const posthog = usePostHog();
+	const posthog = usePostHog();
 
-  const trackEvent = (eventName: string, properties?: Record<string, any>) => {
-    if (posthog) {
-      posthog.capture(eventName, properties);
-    }
-  };
+	const trackEvent = (eventName: string, properties?: Record<string, any>) => {
+		if (posthog) {
+			posthog.capture(eventName, properties);
+		}
+	};
 
-  const identifyUser = (userId: string, properties?: Record<string, any>) => {
-    if (posthog) {
-      posthog.identify(userId, properties);
-    }
-  };
+	const identifyUser = (userId: string, properties?: Record<string, any>) => {
+		if (posthog) {
+			posthog.identify(userId, properties);
+		}
+	};
 
-  return {
-    trackEvent,
-    identifyUser,
-    posthog,
-  };
+	return {
+		trackEvent,
+		identifyUser,
+		posthog,
+	};
 }

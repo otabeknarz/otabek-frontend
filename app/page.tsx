@@ -7,17 +7,17 @@ import { ExperienceSection } from "@/components/sections/experience";
 import { ContactSection } from "@/components/sections/contact";
 
 export default function Home() {
-  return (
-    <>
-      <Header />
-      <main className="pt-16 container mx-auto">
-        <HeroSection />
-        <AboutSection />
-        <ProjectsSection />
-        <ExperienceSection />
-        <ContactSection />
-      </main>
-      <Footer />
-    </>
-  );
+	return (
+		<>
+			<Header />
+			<main className="pt-16 container mx-auto">
+				<HeroSection />
+				<AboutSection />
+				<ProjectsSection />
+				<ExperienceSection />
+				<ContactSection />
+			</main>
+			<Footer />
+		</>
+	);
 }
